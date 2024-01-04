@@ -1,27 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    background-color: #1f1f1f;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <link rel="stylesheet" href="./src/style.css">
-    <meta charset="UTF-8">
-    <title>RetroSite</title>
-</head>
-<body>
-    <div class="logo">
-    <img src="./videos/logo.gif" id="logoGif"></img>
-    </div>
-    <h1 class="bigHead">retroneek.dev</h1>
-    <div class="navinfo">
-        <a id="project">Projects</a>
-        <a id="myResume">Resume</a>
-        <a id="contactMe">Contact</a>
-    </div>
+.logo{
+    text-align: center;
+}
 
-    <hr/>
+.bigHead{
+    text-align: center;
+    color: white;
+    font-size: 4rem;   
+    background: rgb(24, 24, 24);
+    padding-top: 8rem;
+    height: 6rem;
+    margin-top: -8rem;
+  }
 
-    <div class="projectSection">
-        <h2>Projects</h2>
-    </div>
+.navinfo{
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    height: 4rem;
+    display: block;
+    background: rgb(24, 24, 24);
+    a{
+        color: white;
+        border-radius: 0.5rem;
+        background-color: rgb(24, 24, 24);
+        transition: 0.5s;
+        padding: 0.5rem;
+        margin: 1.5rem;
+    }
 
-</body>
-</html>
+    a:hover{
+        background-color: rgb(50, 50, 50);
+        transition: 0.5s;
+    }
+
+}
+
+#logoGif {
+    margin-top: 1rem;
+    height: calc(4rem);
+    background-color: rgb(30, 30, 30);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 5rem rgb(15, 15, 15);
+}
+
+hr{
+    border: 0.5px solid rgb(60, 60, 60);
+}
+
+.projectSection{
+    align-content: center;
+    color: white;
+    padding: 3rem;
+    background-color: rgb(24, 24, 24);
+    margin: 4rem;
+    border-radius: 2rem;
+    border-color: rgb(60, 60, 60);
+    border-style: solid;
+
+    .projectContent{
+        background-color: rgb(24, 24, 24);
+        display: flex;
+        justify-content: center;
+
+        button{
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.75rem;
+            text-align: center;
+            background-color: rgb(50, 50, 50);
+            border-radius: .75rem;
+            border: none;
+            color: white;
+            margin-top: 5rem;
+        }
+
+        button:hover{
+            background-color: rgb(70, 70, 70);
+            transition: 0.5s;
+        }
+
+        img {
+            border-radius: 1rem;
+        }
+        
+        div{
+            text-align: center;
+            padding: 3rem;
+            background-color: rgb(24, 24, 24);
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            height: 5rem;
+            background-color: rgb(24, 24, 24);
+        }
+
+        p{
+            text-align: center;
+            background-color: rgb(24, 24, 24);
+        }
+    }
+
+    h1 {
+        display: block;
+        background-color: rgb(24, 24, 24);
+        font-size: 3rem;
+
+    }
+
+
+
+}
+
+
+
